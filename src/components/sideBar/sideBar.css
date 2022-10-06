@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: #fff;
+  width: 400px;
+  height: 600px;
+  box-shadow: 1px 0px lightgray;
+}
