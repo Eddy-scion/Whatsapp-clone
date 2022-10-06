@@ -1,9 +1,11 @@
+import React from "react";
 import "./App.css";
+import SideBar from "./components/sideBar/sideBar";
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>Hello from application branch</h1>
+    <div className="main-container">
+      <SideBar />
     </div>
   );
 };
