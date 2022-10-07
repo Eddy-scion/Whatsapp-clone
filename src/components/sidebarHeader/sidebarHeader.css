@@ -1,4 +1,4 @@
-.nav {
+.sidebar-header {
   display: flex;
   justify-content: center;
   justify-content: space-between;
@@ -6,7 +6,7 @@
   position: relative;
   background: #f1efef;
   width: 400px;
-  height: 75px;
+  height: 70px;
 }
 
 #user-icon {

@@ -6,17 +6,15 @@ import "./sidebarForm.css";
 
 const SidebarForm = () => {
   return (
-    <React.Fragment>
-      <div className="searchform-container">
-        <div className="search-form">
-          <SearchIcon id="search-icon" />
-          <Input placeholder="Search or start new chat" />
-        </div>
-        <div>
-          <FilterListIcon id="filter-icon" />
-        </div>
+    <div className="searchform-container">
+      <div className="search-form">
+        <SearchIcon id="search-icon" />
+        <Input placeholder="Search or start new chat" />
       </div>
-    </React.Fragment>
+      <div>
+        <FilterListIcon id="filter-icon" />
+      </div>
+    </div>
   );
 };
 

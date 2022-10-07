@@ -7,14 +7,12 @@ import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 
 const SidebarHeader = () => {
   return (
-    <React.Fragment>
-      <div className="nav">
-        <AccountCircleIcon id="user-icon" fontSize="large" />
-        <DonutLargeIcon id="donut-icon" />
-        <AddIcon id="add-icon" color="gray" />
-        <MoreHorizIcon id="more-icon" />
-      </div>
-    </React.Fragment>
+    <div className="sidebar-header">
+      <AccountCircleIcon id="user-icon" fontSize="large" />
+      <DonutLargeIcon id="donut-icon" />
+      <AddIcon id="add-icon" color="gray" />
+      <MoreHorizIcon id="more-icon" />
+    </div>
   );
 };
 

@@ -1,0 +1,25 @@
+.chat-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #f1efef;
+  width: 900px;
+  min-height: 70px;
+}
+
+.chat-footer input {
+  border: none;
+  border-radius: 5px;
+  width: 750px;
+  height: 35px;
+}
+
+.chat-footer input::placeholder {
+  padding-left: 10px;
+  color: rgb(0, 0, 0, 1);
+}
+
+.chat-footer input:focus {
+  padding-left: 10px;
+  border-radius: 0px;
+}
