@@ -1,0 +1,8 @@
+.chat-body {
+  width: 900px;
+  padding: 7px;
+  min-height: 460px;
+  background: #fff;
+  background-image: url("/src/images/whatsapp-bg-image.jpg");
+  overflow: auto;
+}

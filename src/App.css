@@ -11,6 +11,7 @@ body {
 }
 
 .main-container {
+  display: flex;
   background-color: #f1efef;
   width: 1300px;
   height: 600px;
