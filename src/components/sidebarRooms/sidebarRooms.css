@@ -1,0 +1,25 @@
+.sidebar-rooms {
+  display: flex;
+  margin-top: 10px;
+  width: 400px;
+  background: #fff;
+  line-height: 22px;
+  font-size: 14.5px;
+}
+
+.circle {
+  margin: 10px 12px 0px 10px;
+  width: 37px;
+  height: 37px;
+  padding: 7px;
+  border-radius: 35px;
+  text-align: center;
+  color: #fff;
+}
+
+.rooms {
+  margin-top: 10px;
+  border-bottom: 1px solid lightgray;
+  height: 50px;
+  width: 330px;
+}

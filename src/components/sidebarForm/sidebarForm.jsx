@@ -9,7 +9,7 @@ const SidebarForm = () => {
     <div className="searchform-container">
       <div className="search-form">
         <SearchIcon id="search-icon" />
-        <Input placeholder=" or start new chat" />
+        <Input placeholder="Search or start new chat" />
       </div>
       <div>
         <FilterListIcon id="filter-icon" />
