@@ -7,4 +7,18 @@
   width: 400px;
   height: 600px;
   box-shadow: 1px 0px lightgray;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.side {
+  display: flex;
+  margin-top: 10px;
+  width: 400px;
+  height: 415px;
+  background: #fff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  line-height: 22px;
+  font-size: 14.5px;
 }
