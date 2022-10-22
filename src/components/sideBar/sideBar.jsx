@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { db } from "../../firebase";
 import { addDoc, collection, getDocs, Timestamp } from "firebase/firestore";
 import SidebarHeader from "../sidebarHeader/sidebarHeader";
@@ -49,7 +50,6 @@ const SideBar = () => {
   useEffect(() => {
     const getRooms = async () => {
       const data = await getDocs(roomCollection);
-      // console.log(data);
       setRooms(
         data.docs.map((doc) => ({
           ...doc.data(),
@@ -68,16 +68,17 @@ const SideBar = () => {
 
       {rooms.map((room) => {
         return (
-          <SidebarRooms
-            key={room.id}
-            createdAt={room.createdAt.seconds}
-            roomName={room.roomName}
-            firstLetter={room.roomName
-              .split(" ")
-              .map((e) => e[0])
-              .join("")}
-            color={room.color}
-          />
+          <Link to={`/rooms/${room.id}`} key={room.id}>
+            <SidebarRooms
+              createdAt={room.createdAt.seconds}
+              roomName={room.roomName}
+              firstLetter={room.roomName
+                .split(" ")
+                .map((e) => e[0])
+                .join("")}
+              color={room.color}
+            />
+          </Link>
         );
       })}
     </div>
