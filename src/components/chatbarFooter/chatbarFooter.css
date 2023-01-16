@@ -10,7 +10,7 @@
 .chat-footer input {
   border: none;
   border-radius: 5px;
-  width: 750px;
+  width: 720px;
   height: 35px;
 }
 
@@ -21,5 +21,4 @@
 
 .chat-footer input:focus {
   padding-left: 10px;
-  border-radius: 0px;
 }
