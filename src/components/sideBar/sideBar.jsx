@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+
 import { db } from "../../firebase";
 import { addDoc, collection, getDocs, Timestamp } from "firebase/firestore";
 import SidebarHeader from "../sidebarHeader/sidebarHeader";
@@ -68,17 +68,17 @@ const SideBar = () => {
 
       {rooms.map((room) => {
         return (
-          <Link to={`/rooms/${room.id}`} key={room.id}>
-            <SidebarRooms
-              createdAt={room.createdAt.seconds}
-              roomName={room.roomName}
-              firstLetter={room.roomName
-                .split(" ")
-                .map((e) => e[0])
-                .join("")}
-              color={room.color}
-            />
-          </Link>
+          <SidebarRooms
+            createdAt={room.createdAt.seconds}
+            roomName={room.roomName}
+            key={room.id}
+            firstLetter={room.roomName
+              .split(" ")
+              .map((e) => e[0])
+              .join("")}
+            color={room.color}
+            roomId={room.id}
+          />
         );
       })}
     </div>

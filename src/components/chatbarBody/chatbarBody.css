@@ -4,5 +4,16 @@
   min-height: 460px;
   background: #fff;
   background-image: url("/src/images/whatsapp-bg-image.jpg");
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.message-box {
+  max-width: fit-content;
+  max-height: fit-content;
+  border: 1px solid #d0f0c0;
+  border-radius: 10px;
+  background-color: #d0f0c0;
+  padding: 15px;
+  margin-bottom: 20px;
 }
